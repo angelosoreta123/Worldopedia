@@ -7,7 +7,7 @@ import CountryPage from "./pages/CountryPage";
 const App = () => {
   return (
       <Routes>
-        <Route path="/" element={<MainLayout />}>
+        <Route path="/Worldopedia" element={<MainLayout />}>
           <Route index element={<HomePage />} />
           <Route path="/country/:name" element={<CountryPage />} />
           <Route path="*" element={<NotFoundPage />} />

@@ -11,6 +11,6 @@ Worldopedia is a dynamic web application built using **React** and **Tailwind CS
 
 ## Technologies Used
 
-- **React**: JavaScript library for building the user interface.
-- **Tailwind CSS**: Utility-first CSS framework for fast and customizable design.
+- **Frontend**: React JS
+- **Styling**: Tailwind CSS
 - **Axios**: For making API requests to fetch data from `restcountries.com`.

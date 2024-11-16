@@ -6,10 +6,10 @@ const List = ({ countries }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <ul className="max-w-7xl flex flex-col sm:flex-row flex-wrap gap-4 w-full px-4 justify-evenly">
+    <ul className="max-w-7xl flex flex-col sm:flex-row flex-wrap gap-5 w-full px-4 justify-start">
       {countries.map((country) => (
         <Link
-          to={`/country/${country.name.common}`}
+          to={`/Worldopedia/${country.name.common}`}
           className={`flex flex-col pb-4 lg:basis-[calc(25%-16px)] md:basis-[calc(33.33%-16px)] sm: basis-[calc(50%-16px)]  ${
             theme === "dark"
               ? "bg-darkBlue text-white"
@@ -20,7 +20,7 @@ const List = ({ countries }) => {
           <img
             src={country.flags.png}
             alt={`Flag of ${country.name.common}`}
-            className="h-56 md:h-40 w-auto"
+            className="h-56 md:h-40 w-full"
           />
           <div className="flex flex-col p-4 gap-2">
             <h1 className="font-extrabold mb-2 text-lg break-words ">

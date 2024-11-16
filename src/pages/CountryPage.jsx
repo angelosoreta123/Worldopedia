@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { FaArrowLeft } from "react-icons/fa6";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../components/Spinner";
 
@@ -67,7 +67,7 @@ const CountryPage = () => {
         <Spinner loading={loading} />
       ) : (
         <>
-          <a href="/">
+          <Link to={'/Worldopedia'}>
             <button
               className={`flex items-center gap-2 w-fit py-2 px-8 rounded-md shadow-lg ${
                 theme === "dark" ? "bg-darkBlue" : "bg-gray-200"
@@ -76,7 +76,7 @@ const CountryPage = () => {
               <FaArrowLeft />
               Back
             </button>
-          </a>
+            </Link>
           <div className="flex flex-col lg:flex-row gap-20 w-full md:items-center">
             <img
               src={country.flags.png}

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -40,7 +41,7 @@ const Header = () => {
       }`}
     >
       <div className="flex justify-between max-w-7xl w-full px-4">
-        <a href="/">
+        <Link to={"/Worldopedia"}>
           <h1
             className={`text-md md:text-2xl  ${
               theme === "dark" ? "text-white" : "text-darkBlue"
@@ -48,7 +49,7 @@ const Header = () => {
           >
             Where in the World?
           </h1>
-        </a>
+        </Link>
         <button
           onClick={toggleTheme}
           className="flex gap-2 items-center justify-center"

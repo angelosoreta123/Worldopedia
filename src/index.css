@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#dark {
+  background-color: hsl(207, 26%, 17%);
+}
+
+#light {
+  background-color: hsl(0, 0%, 98%);
+}

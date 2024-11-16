@@ -6,6 +6,7 @@ import CountryPage from "./pages/CountryPage";
 
 const App = () => {
   return (
+    <Router basename="/Worldopedia">
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
+    </Router>
   );
 };
 

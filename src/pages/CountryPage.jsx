@@ -81,7 +81,7 @@ const CountryPage = () => {
             <img
               src={country.flags.png}
               alt={`Flag of ${country.name.common}`}
-              className="flex-1 w-full lg:h-96"
+              className="flex-1 w-full lg:h-96 lg:flex-none lg:w-3/6"
             />
             <div className="flex flex-col gap-10 w-full lg:w-auto">
               <div className="flex flex-col gap-4">

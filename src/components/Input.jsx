@@ -8,6 +8,7 @@ const Input = ({ className, value, onChange }) => {
       className={className}
       name="country"
       id="country"
+      autocomplete="off"
     />
   );
 };

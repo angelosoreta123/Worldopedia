@@ -9,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/Worldopedia" element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="/country/:name" element={<CountryPage />} />
+          <Route path="/Worldopedia/country/:name" element={<CountryPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

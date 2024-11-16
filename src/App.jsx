@@ -6,7 +6,7 @@ import CountryPage from "./pages/CountryPage";
 
 const App = () => {
   return (
-    <Router basename="/Worldopedia">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />

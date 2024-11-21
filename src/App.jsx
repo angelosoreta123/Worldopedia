@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layout/MainLayout";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -9,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/Worldopedia" element={<MainLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="/Worldopedia/:name" element={<CountryPage />} />
+          <Route path=":name" element={<CountryPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
